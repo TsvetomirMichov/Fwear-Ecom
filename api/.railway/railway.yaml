@@ -1,0 +1,24 @@
+# .railway/railway.yaml
+
+services:
+  - name: api
+    image: railwayapp/start-node
+    command: NODE_ENV=production npm start
+    routes:
+      - src: /
+        dest: /app
+    env:
+      DATABASE_CLIENT: sqlite
+      DATABASE_FILENAME: .tmp/data.db
+      PORT: 1337
+APP_KEYS: 6/YXwg7kgu/KzdHF1GEwiw==,b5cQVM6+oEzaww2bmq14Ng==,Q2qmp8mHix/Q+OJddzuMlg==,hEFItYmgT+t3SuEsPxL/jg==
+API_TOKEN_SALT: TdJA90/B10YA+ZZPcgpc7Q==
+ADMIN_JWT_SECRET: INQpdA2PQcfsjkWq3YSPvg==
+TRANSFER_TOKEN_SALT: iDjEXcw4fncYE6ZjS8Sk+g==
+# Database
+JWT_SECRET: IwOdVoffsAZcsZ/RVivIsw==
+STRIPE_TOKEN: sk_test_51LjQOoHUF38YFlPZza8codZIkZPGjv3MP7fJadRCzmNX9bMI9m3jktHkIpVs1nrY8NXVakbgjwhoPbbXeNPnj2po00LkAmCeog
+CLIENT_URL: https://fwear.netlify.app
+REACT_APP_UPLOAD_URL: http://localhost:1337
+      # Add your other environment variables here
+    buildCommand: npm install
