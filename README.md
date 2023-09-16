@@ -35,7 +35,7 @@ Welcome to our Clothing Store, a cutting-edge React eCommerce website. We've com
 
 ## Demo
 
-Explore our live demo of the Clothing Store: [Demo Link](https://your-demo-link-here.com)
+Explore our live demo of the Clothing Store: [Demo Link](https://fwear.netlify.app/)
 
 ## Getting Started
 
@@ -61,3 +61,34 @@ git clone https://github.com/your-username/clothing-store.git
 cd client
 npm install
  ````
+
+3. Install dependencies for the server (Strapi):
+````
+cd ../server
+npm install
+````
+
+4. Start the development server for both the client and server:
+````
+cd ../client
+npm start
+ ````
+
+5. To run the server (Strapi) locally, navigate to the server directory:
+````
+cd ../server
+npm run develop
+ ````
+
+Usage
+-Visit http://localhost:3000 to access the Clothing Store website.
+
+-Start shopping for your favorite clothing items, add them to your cart, and make secure payments using Stripe.
+
+## Technologies Used
+- React
+- Strapi (Headless CMS)
+- Stripe (Payment Integration)
+- MUI 5 (Material-UI)
+- Redux (State Management)
+- SCSS (Styling)
