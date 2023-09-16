@@ -14,8 +14,7 @@ Welcome to our Clothing Store, a cutting-edge React eCommerce website. We've com
   - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
